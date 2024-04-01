@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page">
+        <h1>Login</h1>
+        <button onclick="loginWithFacebook()">Login with Facebook</button>
+        <button onclick="loginWithGoogle()">Login with Google</button>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" style="display: none;">
+        <h1>Welcome User!</h1>
+        <div class="dashboard-block" onclick="showDetails('family')">
+            <h2>Family</h2>
+        </div>
+        <div class="dashboard-block" onclick="showDetails('friends')">
+            <h2>Friends</h2>
+        </div>
+        <div class="dashboard-block" onclick="showDetails('others')">
+            <h2>Others</h2>
+        </div>
+    </div>
+
+    <!-- Details -->
+    <div id="details" style="display: none;">
+        <h1 id="detail-title"></h1>
+        <div id="person-details"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

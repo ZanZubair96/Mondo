@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#login-page, #dashboard, #details {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dashboard-block {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.dashboard-block:hover {
+    background-color: skyblue;
+}
