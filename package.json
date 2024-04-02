@@ -1,0 +1,17 @@
+{
+  "name": "mondo",
+  "version": "1.0.0",
+  "description": "This tool provides a simple interface for users to track tasks and responsibilities within different categories of relationships (family, friends, others).",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

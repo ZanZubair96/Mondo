@@ -19,19 +19,32 @@
         <h1>Welcome User!</h1>
         <div class="dashboard-block" onclick="showDetails('family')">
             <h2>Family</h2>
+            <img src="family_icon.png" alt="Family Icon">
         </div>
         <div class="dashboard-block" onclick="showDetails('friends')">
             <h2>Friends</h2>
+            <img src="friends_icon.png" alt="Friends Icon">
         </div>
         <div class="dashboard-block" onclick="showDetails('others')">
             <h2>Others</h2>
+            <img src="others_icon.png" alt="Others Icon">
         </div>
     </div>
 
     <!-- Details -->
     <div id="details" style="display: none;">
         <h1 id="detail-title"></h1>
-        <div id="person-details"></div>
+        <select id="person-dropdown" onchange="showPersonDetails()">
+            <option value="" disabled selected>Select a person</option>
+            <option value="John">John</option>
+            <option value="Alice">Alice</option>
+            <!-- Add more options as needed -->
+        </select>
+        <input type="file" id="image-upload" accept="image/*" onchange="uploadImage(event)">
+        <div id="person-details">
+            <img id="person-image" src="" alt="Person Image">
+            <div id="person-info"></div>
+        </div>
     </div>
 
     <script src="scripts.js"></script>
